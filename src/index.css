@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* index.css */
+.no-hover:hover {
+    background-color: transparent !important; /* Prevents background color on hover */
+    cursor: default; /* Optional: changes cursor to default on hover */
+  }
+  
