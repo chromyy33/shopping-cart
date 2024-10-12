@@ -5,9 +5,9 @@ function Layout() {
   const { state } = useCart();
   const productsData = state.productsData;
   return (
-    <div className="grid grid-cols-[19rem_1fr] px-[4rem] gap-5 content-center mx-auto ">
+    <div className="grid sm:grid-cols-[1fr_1fr] md:grid-cols-[18rem_1fr] sm:px-[4rem] px-[2rem] gap-5 content-center mx-auto ">
       <Filter />
-      <div className="grid grid-cols-4 gap-5  ">
+      <div className="grid gap-5 lg:grid-cols-3  ">
         {productsData.products.map((productItemData) => {
           return (
             <ProductItem

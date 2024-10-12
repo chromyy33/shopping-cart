@@ -18,8 +18,8 @@ function Cart() {
     shippingFee = 0;
   }
   return (
-    <div className="flex justify-between w-[62rem] mx-auto">
-      <div className="flex flex-col gap-3 items-center ">
+    <div className="flex lg:max-w-[50rem]: flex-col sm:flex-row sm:justify-center  sm:items-stretch md:w-full px-5 md:px-7 gap-3  items-center">
+      <div className="flex flex-col w-[19rem] sm:w-[22rem] lg:w-[40rem] md:w-[30rem] gap-3 ">
         {cartData.map((itemData) => {
           return <CheckoutItem itemData={itemData} key={itemData.id} />;
         })}

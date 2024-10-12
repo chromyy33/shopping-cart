@@ -7,8 +7,8 @@ function CheckoutItem({ itemData }) {
   const { title, thumbnail, id, price, rating, stock } = itemData;
   const { updateQuantity, removeItem } = useCart();
   return (
-    <Card shadow="sm" className="w-[40rem]">
-      <CardHeader className="justify-between">
+    <Card shadow="sm" className=" lg:w-[40rem]">
+      <CardHeader className="w-full flex-col gap-3 lg:gap-2 items-start lg:flex-row lg:items-center lg:justify-center">
         <img src={thumbnail} alt={title} className="w-[4rem] object-cover" />
         {title}
         <p>$ {price}</p>

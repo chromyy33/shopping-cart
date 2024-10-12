@@ -30,7 +30,9 @@ function Header() {
           <Input
             type="text"
             placeholder="Search for products"
-            className={location.pathname === "/cart" ? "opacity-0" : ""}
+            className={`${
+              location.pathname === "/cart" ? "opacity-0" : ""
+            } opacity-0 sm:opacity-100`}
           />
 
           <Dropdown>
@@ -44,7 +46,6 @@ function Header() {
               aria-label="Static Actions"
               variant="flat"
               closeOnSelect={false}
-              
             >
               {cartCount ? (
                 cartData.map((itemData) => {
